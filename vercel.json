@@ -1,13 +1,18 @@
 {
-  "functions": {
-    "main.py": {
-      "runtime": "python3.9"
+  "version": 2,
+  "builds": [
+    {
+      "src": "setup.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/main.py"
+      "dest": "/index.html"
     }
   ]
 }
