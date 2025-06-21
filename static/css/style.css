@@ -152,136 +152,101 @@ body.bg-light {
 }
 
 /* Card & Container Styling */
-.card, .feature-card, .candidate-card {
-    background: rgba(22, 28, 44, 0.92) !important;
-    border: none;
-    color: #e6eaf3;
-    box-shadow: 0 4px 24px rgba(10, 20, 40, 0.18);
+/* Glassmorphism Card */
+.card, .feature-card, .candidate-card,
+.card-body, .card-header,
+.upload-area,
+.form-control, textarea.form-control {
+    color: #e6eaf3 !important;
 }
 
+.form-label, .form-text, .lead, label, h1, h2, h3, h4, h5, h6, p, small, span {
+    color: #e6eaf3 !important;
+}
+
+input, textarea {
+    color: #e6eaf3 !important;
+}
+
+::placeholder {
+    color: #b0b8c9 !important;
+    opacity: 1;
+}
+
+/* Untuk text-muted agar tetap kontras */
+.text-muted {
+    color: #b0b8c9 !important;
+}
+
+.card, .feature-card, .candidate-card {
+    background: rgba(34, 44, 74, 0.55) !important;
+    border: 1.5px solid rgba(80, 120, 200, 0.13);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #e6eaf3;
+    border-radius: 1.1rem;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover, .feature-card:hover, .candidate-card:hover {
+    box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.22);
+}
+
+/* Card Header */
 .card-header.bg-primary,
 .card-header.bg-warning,
 .card-header.bg-info,
 .card-header.bg-success {
     background: linear-gradient(135deg, #223a5f 60%, #1a233a 100%) !important;
     color: #e6eaf3 !important;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 1.1rem;
+    border-top-right-radius: 1.1rem;
     border-bottom: 1px solid #223a5f;
+    backdrop-filter: blur(6px);
 }
 
-/* Collapse Button */
-button[data-bs-toggle="collapse"] {
-    font-size: 0.95rem;
-    padding: 0.25rem 0.75rem;
+/* Input & Textarea */
+.form-control, .form-control:focus, textarea.form-control {
+    background: rgba(255,255,255,0.08) !important;
+    color: #e6eaf3 !important;
+    border: 1.5px solid rgba(80, 120, 200, 0.13);
+    box-shadow: none;
+    border-radius: 0.7rem;
+    transition: border-color 0.2s;
 }
 
-/* Alert Customization */
-.alert-danger {
-    font-size: 0.98rem;
+.form-control:focus, textarea.form-control:focus {
+    border-color: #3a7bd5;
+    background: rgba(255,255,255,0.13) !important;
+    color: #fff !important;
 }
 
-.alert-info {
-    font-size: 0.95rem;
+/* Upload Area */
+.upload-area {
+    background: rgba(34, 44, 74, 0.35);
+    border: 2px dashed #3a7bd5;
+    color: #e6eaf3;
+    border-radius: 1rem;
+    transition: background 0.3s, border-color 0.3s;
 }
 
-/* List Group Customization */
-.list-group-item {
-    background: transparent;
-    border: none;
-    font-size: 0.97rem;
-    padding-left: 0;
-    padding-right: 0;
+.upload-area:hover, .upload-area.dragover {
+    background: rgba(58, 123, 213, 0.10);
+    border-color: #00c6fb;
 }
 
-/* Scrollbar Styles */
-::-webkit-scrollbar {
-    width: 8px;
-    background: #101928;
-}
-::-webkit-scrollbar-thumb {
-    background: #223a5f;
-    border-radius: 4px;
+/* File List */
+.file-item {
+    background: rgba(255,255,255,0.10);
+    color: #e6eaf3;
+    border: 1px solid rgba(80, 120, 200, 0.10);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 767.98px) {
-    .upload-area {
-        padding: 20px;
-    }
-    .feature-card {
-        margin-bottom: 1rem;
-    }
-    .candidate-card {
-        margin-bottom: 1rem;
-    }
-    .container.py-5 {
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
-    }
-}
-
-/* Print Styles (Tetap putih saat print) */
-@media print {
-    body {
-        background: #fff !important;
-        color: #000 !important;
-    }
-    .card, .candidate-card {
-        background: #fff !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        border: 1px solid #dee2e6 !important;
-    }
-}
-
-/* Utility Classes */
-.text-muted {
+/* Placeholder color */
+::placeholder {
     color: #b0b8c9 !important;
-}
-
-.text-primary {
-    color: #007bff !important;
-}
-
-.text-success {
-    color: #28a745 !important;
-}
-
-.text-warning {
-    color: #ffc107 !important;
-}
-
-.text-info {
-    color: #17a2b8 !important;
-}
-
-.text-danger {
-    color: #dc3545 !important;
-}
-
-.bg-light {
-    background-color: #f8f9fa !important;
-}
-
-.bg-info {
-    background: linear-gradient(135deg, #17a2b8, #20c997) !important;
-}
-
-.bg-success {
-    background: linear-gradient(135deg, #28a745, #20c997) !important;
-}
-
-.bg-warning {
-    background: linear-gradient(135deg, #ffc107, #fd7e14) !important;
-}
-
-.bg-primary {
-    background: linear-gradient(135deg, #007bff, #0056b3) !important;
-}
-
-.border-warning {
-    border-color: #ffc107 !important;
+    opacity: 1;
 }
 
 /* Miscellaneous */
