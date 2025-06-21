@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # <-- Pindahkan ke sini, sebelum os.getenv
+load_dotenv()  
 
 import uuid
 import asyncio
@@ -371,7 +371,4 @@ async def health_check():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-# Export app untuk Vercel
-handler = app
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
