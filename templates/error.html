@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>⚠️ Analysis Error</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center mb-4">
+                    <i class="fas fa-exclamation-triangle fa-4x text-warning mb-3"></i>
+                    <h1 class="h2">Analysis Error</h1>
+                </div>
+                
+                <div class="card border-warning">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"><i class="fas fa-bug me-2"></i>What went wrong?</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Error Details:</strong><br>
+                            {{ERROR_MESSAGE}}
+                        </div>
+                        
+                        <h6 class="mt-4">Common Issues & Solutions:</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-start">
+                                <i class="fas fa-file-times text-danger me-2 mt-1"></i>
+                                <div>
+                                    <strong>File Format Issues:</strong><br>
+                                    <small class="text-muted">Ensure files are in PDF, DOCX, or TXT format and not corrupted</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-start">
+                                <i class="fas fa-wifi text-danger me-2 mt-1"></i>
+                                <div>
+                                    <strong>Network Issues:</strong><br>
+                                    <small class="text-muted">Check your internet connection and try again</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-start">
+                                <i class="fas fa-server text-danger me-2 mt-1"></i>
+                                <div>
+                                    <strong>API Issues:</strong><br>
+                                    <small class="text-muted">The AI service might be temporarily unavailable</small>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-start">
+                                <i class="fas fa-weight-hanging text-danger me-2 mt-1"></i>
+                                <div>
+                                    <strong>File Size:</strong><br>
+                                    <small class="text-muted">Large files may cause timeouts. Try smaller files or fewer files at once</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-left me-2"></i>Try Again
+                    </a>
+                    <button class="btn btn-outline-secondary btn-lg ms-2" onclick="window.location.reload()">
+                        <i class="fas fa-redo me-2"></i>Refresh Page
+                    </button>
+                </div>
+                
+                <div class="alert alert-info mt-4" role="alert">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Need Help?</strong> If the problem persists, please check your API configuration and ensure all dependencies are properly installed.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
