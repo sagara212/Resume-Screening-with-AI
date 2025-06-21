@@ -230,7 +230,6 @@ class ResultRenderer:
         sorted_analyses = sorted(analyses, key=lambda x: x['score'], reverse=True)
 
         html_result = "<div class='results-container'>"
-        html_result += "<h3 class='mb-4'>📊 Candidate Rankings</h3>"
 
         for idx, analysis in enumerate(sorted_analyses, 1):
             score = analysis['score']
@@ -243,7 +242,7 @@ class ResultRenderer:
             html_result += f"""
             <div class="card mb-3">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">🎯 Candidate #{idx}</h5>
+                    <h5 class="mb-0">🎯 Resume #{idx}</h5>
                     <span class="badge bg-{badge_class} fs-6">Score: {score}/10</span>
                 </div>
                 <div class="card-body">

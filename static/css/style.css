@@ -209,6 +209,166 @@ button[data-bs-toggle="collapse"] {
     }
 }
 
+/* === DARK MODE THEME === */
+body,
+.bg-light {
+    background-color: #23272f !important;
+    color: #e4e6eb !important;
+}
+
+.card,
+.candidate-card,
+.modal-content {
+    background-color: #2d323c !important;
+    color: #e4e6eb !important;
+    border: 1px solid #353b48 !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+}
+
+.card-header.bg-primary,
+.card-header.bg-warning,
+.card-header,
+.card-body {
+    background: #23272f !important;
+    color: #e4e6eb !important;
+}
+
+.upload-area {
+    background-color: #23272f;
+    border: 2px dashed #4e5d78;
+    color: #e4e6eb;
+}
+
+.upload-area:hover {
+    background-color: #2d323c;
+    border-color: #20c997;
+}
+
+.upload-area.dragover {
+    border-color: #28a745;
+    background-color: #1e222a;
+}
+
+.feature-card {
+    background: #23272f !important;
+    color: #e4e6eb !important;
+    border: 1px solid #353b48 !important;
+}
+
+.file-item {
+    background: #353b48;
+    color: #e4e6eb;
+}
+
+.file-remove {
+    color: #ff6b81;
+}
+
+.file-remove:hover {
+    color: #ff4757;
+}
+
+input,
+textarea,
+.form-control {
+    background-color: #23272f !important;
+    color: #e4e6eb !important;
+    border: 1px solid #353b48 !important;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #2d323c !important;
+    color: #fff !important;
+    border-color: #20c997 !important;
+}
+
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning {
+    color: #fff !important;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3a86ff, #4361ee) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #43aa8b, #4cc9f0) !important;
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #4361ee, #4cc9f0) !important;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f9c74f, #f9844a) !important;
+}
+
+.score-excellent { background: linear-gradient(135deg, #43aa8b, #4cc9f0); color: #fff; }
+.score-good { background: linear-gradient(135deg, #f9c74f, #f9844a); color: #23272f; }
+.score-poor { background: linear-gradient(135deg, #f3722c, #f94144); color: #fff; }
+
+.bg-info {
+    background: linear-gradient(135deg, #4361ee, #4cc9f0) !important;
+    color: #fff !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, #43aa8b, #4cc9f0) !important;
+    color: #fff !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, #f9c74f, #f9844a) !important;
+    color: #23272f !important;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, #3a86ff, #4361ee) !important;
+    color: #fff !important;
+}
+
+.text-muted {
+    color: #b0b3b8 !important;
+}
+
+.lead,
+.form-text,
+.card-text,
+.small,
+small {
+    color: #b0b3b8 !important;
+}
+
+.alert-danger {
+    background: #3a1f2b !important;
+    color: #ff6b81 !important;
+    border-color: #ff6b81 !important;
+}
+
+.alert-info {
+    background: #1e2a38 !important;
+    color: #4cc9f0 !important;
+    border-color: #4cc9f0 !important;
+}
+
+.list-group-item {
+    background: transparent;
+    color: #e4e6eb;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #23272f;
+}
+::-webkit-scrollbar-thumb {
+    background: #353b48;
+    border-radius: 4px;
+}
+
 /* Utility Classes */
 .text-muted {
     color: #6c757d !important;
