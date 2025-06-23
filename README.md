@@ -48,7 +48,7 @@ This project uses **FastAPI** and **Google Gemini** to build an AI-powered **Res
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/MagicDash91/ML-Engineering-Project.git
+   git clone https://github.com/sagara212/Resume-Screening-with-AI.git
    cd resume-matcher
    ```
 
