@@ -25,19 +25,23 @@ This project uses **FastAPI** and **Google Gemini** to build an AI-powered **Res
 
 ## Project Screenshots :
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h1.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/1.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h2.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/2.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h3.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/3.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h4.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/4.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h5.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/5.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h6.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/6.png)
 
-![Application Logo](https://raw.githubusercontent.com/MagicDash91/ML-Engineering-Project/main/Resume%20Screening%20with%20AI/static/h7.JPG)
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/7.png)
+
+![Application Logo](https://github.com/sagara212/Resume-Screening-with-AI/blob/main/static/8.png)
+
+
 
 ## 🧑‍💻 Setup Instructions
 
