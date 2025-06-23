@@ -123,6 +123,3 @@ After analysis, the application will return the results in the following format:
 
 ## 💡 Contributing
 Feel free to fork the repository, make changes, and create pull requests. Contributions are always welcome!
-
-## 🤝 License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
